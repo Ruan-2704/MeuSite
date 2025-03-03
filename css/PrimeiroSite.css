@@ -1,0 +1,330 @@
+body {
+    /* Define um gradiente de fundo da esquerda para a direita com as cores #0f172a e #1e293b */
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    /* Define a família da fonte como 'Poppins', com Arial e sans-serif como fallback */
+    font-family: 'Poppins', Arial, sans-serif;
+    /* Define a cor do texto como #e2e8f0 */
+    color: #e2e8f0;
+}
+
+h1 { /* Título principal*/
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+    /* Define o tamanho da fonte como 50px */
+    font-size: 80px;
+    /* Herda o estilo da fonte do elemento pai */
+    font-style: inherit;
+    /* Alinha o texto à esquerda */
+    text-align:left;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 12% da altura do elemento pai */
+    top: 12%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.64%;
+}
+
+h2 { /*sub titulo*/
+    /* Define o tamanho da fonte como 20px */
+    font-size: 20px;
+    /* Herda o estilo da fonte do elemento pai */
+    font-style: inherit;
+    /* Define a cor do texto como #e2e8f0 */
+    color: #e2e8f0;
+    /* Alinha o texto à esquerda */
+    text-align:left;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 21% da altura do elemento pai */
+    top: 21%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.8%;
+}
+
+.center {
+    /* Define a altura da linha como 0.5 */
+    line-height: 0.5;
+}
+
+
+.center p{
+    /* Herda o estilo da fonte do elemento pai */
+    font-style: inherit;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 25% da altura do elemento pai */
+    top: 25%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.8%;
+    /* Define a altura da linha como 1.4 */
+    line-height: 1.4;
+    /* Define a cor do texto como #7a7a7a */
+    color: #7a7a7a;
+}
+
+.subpaginas{ /* Sub páginas */
+    /* Remove os marcadores de lista */
+    list-style-type: none;
+    /* Define o espaçamento interno como 20px em cima e embaixo e 50px nas laterais */
+    padding: 20px 50px;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 45% da altura do elemento pai */
+    top: 45%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.8%;
+    /* Define a altura da linha como 2.5 */
+    line-height:2.5;
+}
+
+.subpagina { /*links das sub páginas*/
+    /* Herda o estilo da fonte do elemento pai */
+    font-style: inherit;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold ;
+    /* Define a cor do texto como #7a7a7a */
+    color: #b8b8b8;
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+    /* Define o tamanho da fonte como 20px */
+    font-size: 22px;
+    /* Define o espaçamento interno como 10px em cima e embaixo e 20px nas laterais */
+    padding: 10px 20px;
+}
+
+.subpagina:hover { /*efeito de hover nos links das sub páginas*/
+    /* Define a cor do texto como rgb(0, 217, 255) quando o mouse passa por cima */
+    color: rgb(0, 217, 255);
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+    /* Define o espaçamento interno como 20px em cima e embaixo e 30px nas laterais quando o mouse passa por cima */
+    padding: 20px 30px;
+}
+
+.textomim { /*texto sobre mim*/
+    /* Define o tamanho da fonte como 20px */
+    font-size: 23.5px;
+    /* Herda o estilo da fonte do elemento pai */
+    font-style: inherit;
+    /* Define a cor do texto como #9097a8 */
+    color: #9097a8;
+    /* Alinha o texto à esquerda */
+    text-align: justify;
+    /* Define o posicionamento como absoluto */
+    width: 40%;
+    position: absolute;
+    /* Define a posição vertical como 16% da altura do elemento pai */
+    top: 16%;
+    /* Define a posição horizontal como 50% da largura do elemento pai */
+    left: 50%;
+    /* Define a altura da linha como 1.5 */
+    line-height: 1.5;
+}
+
+footer img { /*imagens das redes sociais */
+    /* Define a largura da imagem como 40px */
+    width: 40px;
+    /* Define a altura da imagem como 40px */
+    height: 40px;
+    /* Inverte as cores da imagem */
+    filter: invert();
+    /* Define o posicionamento como relativo */
+    position: relative;
+    /* Define a opacidade como 0 */;
+    opacity: 20;
+    /* Adiciona uma transição de 0.5s para a propriedade opacity */
+    transition: opacity 0.5s;
+    
+}
+
+footer img:hover{
+    /* Define a opacidade como 1 quando o mouse passa por cima */
+    opacity: 0.5;
+    
+}
+
+footer { /*todo o rodapé*/
+    /* Define o display como flex */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 90% da altura do elemento pai */
+    top: 90%;
+    /* Define a posição horizontal como 9% da largura do elemento pai */
+    left: 9%;
+}
+
+.nomeredessociais {/*texto das imagens do rodapé*/
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define a altura da linha como 0% */
+    line-height: 0%;
+    /* Define a largura como 100px */
+    width: 100px;
+    /* Define a cor do texto como rgb(247, 247, 247) */
+    color: rgb(247, 247, 247);
+    /* Remove os marcadores de lista */
+    list-style-type: none;
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+}
+
+.container {
+    /* Define o espaçamento interno como 50px nas laterais (erro de sintaxe) */
+    padding: px 50px;
+}
+
+.imagem-sub img { /*imagem das sub páginas*/ 
+    /* Define a largura da imagem como 300px */
+    width: 300px;
+    /* Define a altura da imagem como 300px */
+    height: 300px;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 19% da altura do elemento pai */
+    top: 19%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.8%;
+    /* Cria um círculo */
+    border-radius: 50%;
+    /* Define uma borda sólida de 5px com a cor #e2e8f0 */
+    border: 5px solid #e2e8f0;
+}
+
+
+.pagpendente h1 { 
+    position: absolute;
+    left: 39%;
+    top: 35%;
+
+}
+
+.pagpendente h1 {
+    background: linear-gradient(45deg, #302927, #948a7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+.pagpendente p {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+}
+
+.voltar {
+    text-decoration: none;
+    color: #7a7a7a;
+    /* Define a largura da imagem como 40px */
+    position: relative;
+    /* Define a opacidade como 0 */;
+    list-style-type: none;
+    position: absolute;
+    top: 2%;
+    left: -0.5%;
+    padding: 20 px 50px;
+    border-radius: ;
+}
+
+.linkbotao {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8b8b8;
+    font-style: inherit;
+    border-radius: ;
+}
+
+.linkbotao:hover { /*efeito de hover nos links das sub páginas*/
+    /* Define a cor do texto como rgb(0, 217, 255) quando o mouse passa por cima */
+    color: rgb(0, 217, 255);
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+    /* Define o espaçamento interno como 20px em cima e embaixo e 30px nas laterais quando o mouse passa por cima */
+    padding: 20px 30px;
+    
+    
+}
+
+.pagpendente h1 { 
+    font-size: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 2px; 
+    position: absolute;
+    animation: moveSide 5s linear infinite;
+}
+
+@keyframes moveSide {
+    0% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(-50px); }
+}
+
+/* Efeito de pulsação no parágrafo */
+.pagpendente p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(180, 180, 180, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fundo com efeito de movimento infinito */
+body {
+    background-size: 400% 400%;
+    animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Efeito de brilho (glow) nas imagens e textos do footer */
+.footer-highlight img {
+    filter: invert(1) drop-shadow(0 0 10px rgba(0, 217, 255, 0.8));
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-highlight p {
+    color: rgb(0, 217, 255); /* Cor ciano destacada */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efeito volta ao normal depois de 2 segundos */
+.footer-normal img {
+    filter: invert(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-normal p {
+    color: rgb(247, 247, 247); /* Volta para a cor original */
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
