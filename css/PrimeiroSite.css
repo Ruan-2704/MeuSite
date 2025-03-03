@@ -1,123 +1,77 @@
 body {
-    /* Define um gradiente de fundo da esquerda para a direita com as cores #0f172a e #1e293b */
     background: linear-gradient(to right, #0f172a, #1e293b);
-    /* Define a família da fonte como 'Poppins', com Arial e sans-serif como fallback */
     font-family: 'Poppins', Arial, sans-serif;
-    /* Define a cor do texto como #e2e8f0 */
     color: #e2e8f0;
 }
 
-h1 { /* Título principal*/
-    /* Define o peso da fonte como negrito */
-    font-weight: bold;
-    /* Define o tamanho da fonte como 50px */
-    font-size: 80px;
-    /* Herda o estilo da fonte do elemento pai */
+h1 {
+    font-weight: bold; 
+    font-size: clamp(2rem, 6vw, 6rem); 
     font-style: inherit;
-    /* Alinha o texto à esquerda */
-    text-align:left;
-    /* Define o posicionamento como absoluto */
-    position: absolute;
-    /* Define a posição vertical como 12% da altura do elemento pai */
-    top: 12%;
-    /* Define a posição horizontal como 9.8% da largura do elemento pai */
-    left: 9.64%;
+    text-align: left; 
+    position: absolute; 
+    top: 12%; 
+    left: 9.64%; 
 }
 
-h2 { /*sub titulo*/
-    /* Define o tamanho da fonte como 20px */
-    font-size: 20px;
-    /* Herda o estilo da fonte do elemento pai */
+h2 {
+    font-size: clamp(2rem, 6vw, 2rem);
     font-style: inherit;
-    /* Define a cor do texto como #e2e8f0 */
     color: #e2e8f0;
-    /* Alinha o texto à esquerda */
     text-align:left;
-    /* Define o posicionamento como absoluto */
     position: absolute;
-    /* Define a posição vertical como 21% da altura do elemento pai */
-    top: 21%;
-    /* Define a posição horizontal como 9.8% da largura do elemento pai */
-    left: 9.8%;
+    top: 25vh;
+    left: 9.8vw;
 }
 
 .center {
-    /* Define a altura da linha como 0.5 */
     line-height: 0.5;
 }
 
 
 .center p{
-    /* Herda o estilo da fonte do elemento pai */
     font-style: inherit;
-    /* Define o posicionamento como absoluto */
     position: absolute;
-    /* Define a posição vertical como 25% da altura do elemento pai */
     top: 25%;
-    /* Define a posição horizontal como 9.8% da largura do elemento pai */
     left: 9.8%;
-    /* Define a altura da linha como 1.4 */
     line-height: 1.4;
-    /* Define a cor do texto como #7a7a7a */
     color: #7a7a7a;
 }
 
-.subpaginas{ /* Sub páginas */
-    /* Remove os marcadores de lista */
+.subpaginas{ 
     list-style-type: none;
-    /* Define o espaçamento interno como 20px em cima e embaixo e 50px nas laterais */
     padding: 20px 50px;
-    /* Define o posicionamento como absoluto */
     position: absolute;
-    /* Define a posição vertical como 45% da altura do elemento pai */
-    top: 45%;
-    /* Define a posição horizontal como 9.8% da largura do elemento pai */
-    left: 9.8%;
-    /* Define a altura da linha como 2.5 */
+    font-style: font-size: clamp(2rem, 6vw, 2rem);
+    top: 45vh;
+    left: 9.8vw;
     line-height:2.5;
 }
 
-.subpagina { /*links das sub páginas*/
-    /* Herda o estilo da fonte do elemento pai */
+.subpagina { 
     font-style: inherit;
-    /* Define o peso da fonte como negrito */
     font-weight: bold ;
-    /* Define a cor do texto como #7a7a7a */
     color: #b8b8b8;
-    /* Remove o sublinhado do texto */
     text-decoration: none;
-    /* Define o tamanho da fonte como 20px */
     font-size: 22px;
-    /* Define o espaçamento interno como 10px em cima e embaixo e 20px nas laterais */
     padding: 10px 20px;
 }
 
-.subpagina:hover { /*efeito de hover nos links das sub páginas*/
-    /* Define a cor do texto como rgb(0, 217, 255) quando o mouse passa por cima */
+.subpagina:hover {
     color: rgb(0, 217, 255);
-    /* Remove o sublinhado do texto */
     text-decoration: none;
-    /* Define o espaçamento interno como 20px em cima e embaixo e 30px nas laterais quando o mouse passa por cima */
     padding: 20px 30px;
 }
 
-.textomim { /*texto sobre mim*/
-    /* Define o tamanho da fonte como 20px */
-    font-size: 23.5px;
-    /* Herda o estilo da fonte do elemento pai */
+.textomim {
+    font-size: 21px;
     font-style: inherit;
-    /* Define a cor do texto como #9097a8 */
     color: #9097a8;
-    /* Alinha o texto à esquerda */
     text-align: justify;
-    /* Define o posicionamento como absoluto */
     width: 40%;
     position: absolute;
-    /* Define a posição vertical como 16% da altura do elemento pai */
-    top: 16%;
-    /* Define a posição horizontal como 50% da largura do elemento pai */
-    left: 50%;
-    /* Define a altura da linha como 1.5 */
+    top: 16vh;
+    left: 50vw;
     line-height: 1.5;
 }
 
