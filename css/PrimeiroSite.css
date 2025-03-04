@@ -245,28 +245,6 @@ body {
         top: 11vh; 
         left: 26vw;
     }
-    
-    body::before, body::after {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: red;
-        z-index: 9999;
-    }
-    
-    body::before {
-        width: 2px;
-        height: 100vh; /* Linha vertical no centro */
-    }
-    
-    body::after {
-        width: 100vw; /* Linha horizontal no centro */
-        height: 2px;
-    }
-    
-
 
     .textomim {
         width: 90vw;
@@ -393,8 +371,8 @@ body {
     
     footer {
         position: absolute;
-        top: 90%;
-        left: 50%;
+        top: 89vh;
+        left: 50vw;
     }
 }
 
