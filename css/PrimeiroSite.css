@@ -246,17 +246,31 @@ body {
         left: 26vw;
     }
     
-    header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 25vh;
-    padding-top: 2vh; 
-}
+    body::before, body::after {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: red;
+        z-index: 9999;
+    }
+    
+    body::before {
+        width: 2px;
+        height: 100vh; /* Linha vertical no centro */
+    }
+    
+    body::after {
+        width: 100vw; /* Linha horizontal no centro */
+        height: 2px;
+    }
+    
+
+
     .textomim {
         width: 90vw;
+        top: 4vh;
         left: 2.9vw;
         position: relative; 
         font-size: 3.5vw;
