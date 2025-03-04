@@ -312,7 +312,7 @@ body {
         top: auto;
         bottom: 5vh;
         left: 48%;
-        top: 20vh;
+        top: -vw;
         transform: translateX(-50%);
         width: 100%;
         display: flex;
@@ -393,7 +393,7 @@ body {
     
     footer {
         position: absolute;
-        top: 108%;
+        top: 90%;
         left: 50%;
     }
 }
