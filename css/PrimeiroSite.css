@@ -234,18 +234,18 @@ body {
     h1 {
         font-size: 6vw;
         top: 7vh; 
-        left: 35vw;
+        left: 32vw;
     }
 
     h2 {
         font-size: 4vw;
         top: 11vh; 
-        left: 28vw;
+        left: 23.2vw;
     }
 
     .textomim {
         width: 90vw;
-        left: 1.0vw;
+        left: 2.9vw;
         position: relative; 
         font-size: 3.5vw;
         margin-top: 15vh; 
@@ -364,6 +364,13 @@ body {
         padding: 10px 20px;
     }
     
+    footer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 108%;
+        left: 50%;
+    }
 }
 
 
