@@ -1,109 +1,330 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Site</title>
-    <link rel="stylesheet" href="css/PrimeiroSite.css?v=2">
-</head>
+body {
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #e2e8f0;
+}
 
-<body>
-    
-    <header class="center">
-        <h1>Ruan Lucas</h1>
-        <h2>Estudante de Programação</h2>
-        
-    </header>
+h1 {
+    font-weight: bold; 
+    font-size: clamp(2rem, 6vw, 6rem); 
+    font-style: inherit;
+    text-align: left; 
+    position: absolute; 
+    top: 12%; 
+    left: 9.64%; 
+}
 
-    <div>
-        <nav>
-            <ul class="subpaginas">
-                <li>
-                    <a class="subpagina" href="html/Sobremim.html">Sobre mim</a>
-                </li>
-                <li>
-                    <a class="subpagina" href="html/Projetos.html">Projetos</a>
-                </li>
-                <li>
-                    <a class="subpagina" href="#html/contato" id="link-contato">Contato</a>
+h2 {
+    font-size: clamp(2rem, 6vw, 2rem);
+    font-style: inherit;
+    color: #e2e8f0;
+    text-align:left;
+    position: absolute;
+    top: 25vh;
+    left: 9.8vw;
+}
 
-                </li>
-            </ul>
-        </nav>
-        
-    <div class="textomim">
-        <p>
-            
-            Sou estudante de Análise e Desenvolvimento de Sistemas e sou apaixonado pela área de programação. <br>  
-            A forma como APIs, integrações e sistemas são desenvolvidos me fascina, e meu objetivo é me tornar um profissional capaz de criar e 
-            integrar soluções inovadoras. <br>  
-            <br>  
-            Atualmente, estudo Java, HTML e CSS e desenvolvo pequenos projetos para aplicar meus conhecimentos. <br>  
-            Este site é um exemplo disso: um projeto simples, mas significativo, pois representa o início da minha trajetória na programação. <br>  
-            Aqui, registrarei minha evolução, adicionando novos projetos, experiências adquiridas e tudo que for aprendendo ao longo do caminho. <br>  
-            Cada funcionalidade implementada, cada linha de código aprimorada e cada conhecimento adquirido farão parte deste espaço. <br>  
-            <br>  
-            Se você está vendo esta página agora, saiba que este é apenas o começo! <br>  
-            Com o tempo, este projeto será constantemente atualizado, refletindo minha progressão e aperfeiçoamento na área. <br>  
-            Minha meta é me especializar no desenvolvimento de sistemas, APIs e integrações, e futuramente, quem sabe, oferecer esses serviços profissionalmente. <br>  
-            <br>  
-            Fique à vontade para acompanhar essa jornada e ver de perto minha evolução! 
+.center {
+    line-height: 0.5;
+}
 
 
-            
-        </p>    
-    </div>
-    
-    <footer id="contato">
-        
-          <a class="nomeredessociais"href="https://github.com/Ruanlucas-2704?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <img src="Imagens/githubsvg.svg" alt="Git Hub">
-            <p class="textoredessociais">Git Hub</p> 
-          </a>
-          <a class="nomeredessociais" href="https://www.instagram.com/ruan_lucas2704/" target="_blank" rel="noopener noreferrer">
-            <img src="Imagens/instagramsvg.svg" alt="Instagram">
-            <p class="textoredessociais">Instagram</p> 
-                
-          </a>
-          <a class="nomeredessociais"href="https://www.linkedin.com/in/ruan-lucas-6a37071b5/" target="_blank" rel="noopener noreferrer">
-            <img src="Imagens/linkedinsvg.svg" alt="Linkedin">
-            <p class="textoredessociais">Linkedin</p> 
-          </a>
-          
+.center p{
+    font-style: inherit;
+    position: absolute;
+    top: 25%;
+    left: 9.8%;
+    line-height: 1.4;
+    color: #7a7a7a;
+}
 
-    </footer>
-    </div>
+.subpaginas{ 
+    list-style-type: none;
+    padding: 20px 50px;
+    position: absolute;
+    font-style: font-size: clamp(2rem, 6vw, 2rem);
+    top: 45vh;
+    left: 9.8vw;
+    line-height:2.5;
+}
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("link-contato").addEventListener("click", function(event) {
-                event.preventDefault(); // Impede o comportamento padrão do link
-    
-                // Obtém o footer
-                let footer = document.getElementById("contato");
-    
-                // Adiciona a classe de destaque
-                footer.classList.add("footer-highlight");
-    
-                // Rola suavemente até o footer
-                footer.scrollIntoView({ behavior: "smooth", block: "center" });
-    
-                // Remove a classe de destaque e volta ao normal após 2 segundos
-                setTimeout(() => {
-                    footer.classList.remove("footer-highlight");
-                    footer.classList.add("footer-normal");
-    
-                    // Remove a classe "footer-normal" depois de um tempo extra (500ms) para evitar bug visual
-                    setTimeout(() => {
-                        footer.classList.remove("footer-normal");
-                    }, 500);
-                }, 2000);
-            });
-        });
-    </script>
-    
-    
-    
-</body>
+.subpagina { 
+    font-style: inherit;
+    font-weight: bold ;
+    color: #b8b8b8;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 20px;
+}
 
-</html>
+.subpagina:hover {
+    color: rgb(0, 217, 255);
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.textomim {
+    font-size: 21px;
+    font-style: inherit;
+    color: #9097a8;
+    text-align: justify;
+    width: 40%;
+    position: absolute;
+    top: 16vh;
+    left: 50vw;
+    line-height: 1.5;
+}
+
+footer img { /*imagens das redes sociais */
+    /* Define a largura da imagem como 40px */
+    width: 40px;
+    /* Define a altura da imagem como 40px */
+    height: 40px;
+    /* Inverte as cores da imagem */
+    filter: invert();
+    /* Define o posicionamento como relativo */
+    position: relative;
+    /* Define a opacidade como 0 */;
+    opacity: 20;
+    /* Adiciona uma transição de 0.5s para a propriedade opacity */
+    transition: opacity 0.5s;
+    
+}
+
+footer img:hover{
+    /* Define a opacidade como 1 quando o mouse passa por cima */
+    opacity: 0.5;
+    
+}
+
+footer { /*todo o rodapé*/
+    /* Define o display como flex */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 90% da altura do elemento pai */
+    top: 90%;
+    /* Define a posição horizontal como 9% da largura do elemento pai */
+    left: 9%;
+}
+
+.nomeredessociais {/*texto das imagens do rodapé*/
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define a altura da linha como 0% */
+    line-height: 0%;
+    /* Define a largura como 100px */
+    width: 100px;
+    /* Define a cor do texto como rgb(247, 247, 247) */
+    color: rgb(247, 247, 247);
+    /* Remove os marcadores de lista */
+    list-style-type: none;
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+}
+
+.container {
+    /* Define o espaçamento interno como 50px nas laterais (erro de sintaxe) */
+    padding: px 50px;
+}
+
+.imagem-sub img { /*imagem das sub páginas*/ 
+    /* Define a largura da imagem como 300px */
+    width: 300px;
+    /* Define a altura da imagem como 300px */
+    height: 300px;
+    /* Define o posicionamento como absoluto */
+    position: absolute;
+    /* Define a posição vertical como 19% da altura do elemento pai */
+    top: 19%;
+    /* Define a posição horizontal como 9.8% da largura do elemento pai */
+    left: 9.8%;
+    /* Cria um círculo */
+    border-radius: 50%;
+    /* Define uma borda sólida de 5px com a cor #e2e8f0 */
+    border: 5px solid #e2e8f0;
+}
+
+
+.pagpendente h1 { 
+    position: absolute;
+    left: 39%;
+    top: 35%;
+
+}
+
+.pagpendente h1 {
+    background: linear-gradient(45deg, #302927, #948a7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+.pagpendente p {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+}
+
+.voltar {
+    text-decoration: none;
+    color: #7a7a7a;
+    /* Define a largura da imagem como 40px */
+    position: relative;
+    /* Define a opacidade como 0 */;
+    list-style-type: none;
+    position: absolute;
+    top: 2%;
+    left: -0.5%;
+    padding: 20 px 50px;
+    border-radius: ;
+}
+
+.linkbotao {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8b8b8;
+    font-style: inherit;
+    border-radius: ;
+}
+
+.linkbotao:hover { /*efeito de hover nos links das sub páginas*/
+    /* Define a cor do texto como rgb(0, 217, 255) quando o mouse passa por cima */
+    color: rgb(0, 217, 255);
+    /* Remove o sublinhado do texto */
+    text-decoration: none;
+    /* Define o espaçamento interno como 20px em cima e embaixo e 30px nas laterais quando o mouse passa por cima */
+    padding: 20px 30px;
+    
+    
+}
+
+.pagpendente h1 { 
+    font-size: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 2px; 
+    position: absolute;
+    animation: moveSide 5s linear infinite;
+}
+
+@keyframes moveSide {
+    0% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(-50px); }
+}
+
+/* Efeito de pulsação no parágrafo */
+.pagpendente p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(180, 180, 180, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fundo com efeito de movimento infinito */
+body {
+    background-size: 400% 400%;
+    animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Efeito de brilho (glow) nas imagens e textos do footer */
+.footer-highlight img {
+    filter: invert(1) drop-shadow(0 0 10px rgba(0, 217, 255, 0.8));
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-highlight p {
+    color: rgb(0, 217, 255); /* Cor ciano destacada */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efeito volta ao normal depois de 2 segundos */
+.footer-normal img {
+    filter: invert(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-normal p {
+    color: rgb(247, 247, 247); /* Volta para a cor original */
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: clamp(1.5rem, 5vw, 3rem); /* Reduz tamanho da fonte */
+        top: 8vh;  /* Ajusta a posição vertical */
+        left: 5vw; /* Ajusta a posição horizontal */
+    }
+
+    h2 {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        top: 15vh;
+        left: 5vw;
+    }
+
+    .textomim {
+        width: 90vw; /* Ocupa 90% da largura no celular */
+        left: 5vw; /* Reposiciona */
+        top: auto;
+        position: relative;
+    }
+
+    .subpaginas {
+        text-align: center;
+        padding: 10px;
+        top: 50vh; /* Ajusta a posição da lista */
+        left: 5vw;
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    .imagem-sub img {
+        width: 40vw; /* Reduz imagem */
+        height: 40vw;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza a imagem */
+    }
+
+    footer {
+        top: auto;
+        bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
